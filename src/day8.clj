@@ -31,12 +31,12 @@
        (map #(vector (take 10 %) (drop 11 %))))) ;; Split the signal tests from the output digits
 
 (defn count-of?
-  "True if countable `s` has count of `n`"
+  "True if collection `s` has `n` items"
   [n s]
   (= n (count s)))
 
 (defn count-intersects-of?
-  "True if `n` items interest between set `a` and `b`"
+  "True if `n` items intersect between set `a` and `b`"
   [n a b]
   (= n (count (intersection a b))))
 
